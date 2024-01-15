@@ -9,7 +9,6 @@ export default [
 		input: [`src/index.tsx`],
 		plugins: [
 			resolve(),
-			// commonjs(),
 			babel({
 				babelHelpers: "bundled",
 				presets: ["@babel/preset-react"],

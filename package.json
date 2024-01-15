@@ -10,7 +10,8 @@
 	"scripts": {
 		"rollup": "rm -rf dist && rollup -c --bundleConfigAsCjs",
 		"rollup-start": "rollup -c --watch --bundleConfigAsCjs",
-		"prettier": "prettier --write ."
+		"prettier": "prettier --write .",
+		"prepublishOnly": "rm -rf dist && rollup -c --bundleConfigAsCjs"
 	},
 	"devDependencies": {
 		"@rollup/plugin-babel": "^6.0.4",
@@ -36,7 +37,7 @@
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0"
 	},
-	"module": "dist",
+	"module": "dist/index.js",
 	"files": [
 		"dist"
 	],
@@ -46,7 +47,7 @@
 		"url": "git+https://github.com/stdian/react-sitemap.git"
 	},
 	"author": "stdian",
-	"license": "ISC",
+	"license": "MIT",
 	"bugs": {
 		"url": "https://github.com/stdian/react-sitemap/issues"
 	},

@@ -56,29 +56,6 @@ class Sitemap {
         this.routes = routes;
     }
 }
-const host = "https://stdian.ru";
-const routes = [
-    {
-        url: "/",
-        priority: 1,
-        lastmod: "2024-12-01",
-        changefreq: "always",
-    },
-    {
-        url: "/page1",
-        priority: 0.8,
-        lastmod: "2024-12-01",
-        changefreq: "monthly",
-        images: ["https://stdian.ru/image1.jpg"],
-    },
-    {
-        url: "/page2",
-        priority: 1,
-        images: ["https://stdian.ru/image2.jpg", "https://stdian.ru/image3.jpg"],
-    },
-];
-const sitemap = new Sitemap(host, routes);
-console.log('--s', sitemap.getXml());
 
 export { Sitemap as default };
 //# sourceMappingURL=index.js.map
