@@ -6,7 +6,6 @@
 		"sitemap",
 		"react"
 	],
-	"type": "module",
 	"scripts": {
 		"rollup": "rm -rf dist && rollup -c --bundleConfigAsCjs",
 		"rollup-start": "rollup -c --watch --bundleConfigAsCjs",
